@@ -26,7 +26,7 @@ router.get("/model", async (req, res) => {
     }
 });
 
-router.get("/model/:model_number", async (req, res) => {
+router.get("/find_model/:model_number", async (req, res) => {
     try {
         const { model_number } = req.params;
         let result = await models_master.findAll({

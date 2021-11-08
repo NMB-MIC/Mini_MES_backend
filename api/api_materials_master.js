@@ -26,7 +26,7 @@ router.get("/material", async (req, res) => {
     }
 });
 
-router.get("/material/:model_number", async (req, res) => {
+router.get("/find_material/:model_number", async (req, res) => {
     try {
         const { material_number } = req.params;
         let result = await materials_master.findAll({
